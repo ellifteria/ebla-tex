@@ -1,0 +1,47 @@
+% !TEX program = xelatex
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+
+% generally useful commands
+\newcommand{\len}{\text{len}}
+
+% math footnotes (to avoid confusion with exponents)
+\newcommand{\setMathFootnotes}{\renewcommand{\thefootnote}{\fnsymbol{footnote}}}
+
+% theorem environment
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\renewcommand\qedSymbol{$\blacksquare$}
+\newcommand{\textst}{\text{ such that }}
+\newcommand{\textftpoc}{for the purpose of contradiction}
+\newcommand{\textFtpoc}{For the purpose of contradiction}
+\newcommand{\textwolog}{without loss of generality}
+\newcommand{\textWolog}{Without loss of generality}
+\newcommand{\textsts}{sufficient to show}
+
+% logic symbols
+\newcommand{\lxor}{\veebar}
+\newcommand{\lxoralt}{\oplus}
+\newcommand{\defined}{:=}
+\newcommand{\lequiv}{:\Leftrightarrow}
+\newcommand{\lEquiv}{:\leftrightarrow}
+\newcommand{\Implies}{\rightarrow}
+\newcommand{\Impliedby}{\leftarrow}
+\newcommand{\Iff}{\leftrightarrow}
+
+% commands for usual sets of numbers
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\complexes}{\mathbb{C}}
+
+% useful set commands
+\newcommand{\cardinality}[1]{\lvert #1 \rvert}
+
+% commands for elementary number theory
+\newcommand{\divides}{\bigm|}
+\newcommand{\ndivides}{\mathrel{\mkern.5mu \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}}}
